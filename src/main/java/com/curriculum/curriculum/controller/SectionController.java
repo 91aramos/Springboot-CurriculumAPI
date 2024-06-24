@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.curriculum.curriculum.repository.SectionRepository;
 
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class SectionController {
 
