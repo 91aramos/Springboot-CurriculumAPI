@@ -26,3 +26,10 @@ CREATE TABLE SKILL (
     description VARCHAR(255),
     score VARCHAR(10)
 );
+
+CREATE TABLE TRAINING (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    location VARCHAR(255),
+    id_skill BIGINT
+);

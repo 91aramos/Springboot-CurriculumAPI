@@ -2,6 +2,8 @@ package com.curriculum.curriculum.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "SECTION")
 public class Section {
@@ -14,6 +16,12 @@ public class Section {
     private String description;
     private String responsabilities;
     private String technologies;
+
+    @OneToMany(mappedBy = "section", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Responsability> lResponsabilities;
+
+    @OneToMany(mappedBy = "section", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Technology> lTechnologies;
 
     public Long getId() {
         return id;
@@ -62,4 +70,22 @@ public class Section {
     public void setTechnologies(String technologies) {
         this.technologies = technologies;
     }
+
+    public List<Responsability> getListResponsabilities() {
+        return lResponsabilities;
+    }
+
+    public void setListResponsabilities(List<Responsability> lResponsabilities) {
+        this.lResponsabilities = lResponsabilities;
+    }
+
+    public List<Technology> getListTechnologies() {
+        return lTechnologies;
+    }
+
+    public void setListTechnologies(List<Technology> lTechnologies) {
+        this.lTechnologies = lTechnologies;
+    }
+
+    
 }

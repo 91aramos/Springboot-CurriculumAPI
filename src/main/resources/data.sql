@@ -133,4 +133,9 @@ VALUES
 ('Confluence', '9/10'),
 ('Jira', '9/10'),
 ('Trello', '9/10');
+
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Java Basics', 'Online', 1);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Spring Boot Intermediate', 'Online', 2);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('SQL for Developers', 'Onsite', 3);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Maven Advanced', 'Online', 4);
   

@@ -1,5 +1,6 @@
 package com.curriculum.curriculum.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 
@@ -11,12 +12,14 @@ public class Responsability {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_section", referencedColumnName = "id")
+    @JoinColumn(name = "id_section")
+    @JsonIgnore
     private Section section;
 
     @Column(name = "text", columnDefinition = "TEXT")
     private String text;
-
+    public Responsability() {
+    }
     public Responsability(Section section, String text) {
         this.section = section;
         this.text = text;
