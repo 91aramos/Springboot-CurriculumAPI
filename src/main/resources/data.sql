@@ -134,8 +134,9 @@ VALUES
 ('Jira', '9/10'),
 ('Trello', '9/10');
 
-INSERT INTO TRAINING (name, location, id_skill) VALUES ('Java Basics', 'Online', 1);
-INSERT INTO TRAINING (name, location, id_skill) VALUES ('Spring Boot Intermediate', 'Online', 2);
-INSERT INTO TRAINING (name, location, id_skill) VALUES ('SQL for Developers', 'Onsite', 3);
-INSERT INTO TRAINING (name, location, id_skill) VALUES ('Maven Advanced', 'Online', 4);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Spring', '<a href="https://spring.academy/courses/spring-framework-essentials">Spring Academy</a>', 1);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Springboot', '<a href="https://spring.academy/courses/building-a-rest-api-with-spring-boot">Spring Academy</a>', 2);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Angular Essential', '<a href="https://www.linkedin.com/learning/certificates/4560265c3e01c1f08748e089522b28bc3f8a19be4f7cf1af658227f9d94a9601?u=2108001">LinkedIn Learning</a>', 3);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Angular Advance', '<a href="https://www.linkedin.com/learning/certificates/0dd3a547d83d4050f45999b152131bfacb33f601a166a2803f5e1e33d2bd873f?u=2108001">LinkedIn Learning</a>', 4);
+INSERT INTO TRAINING (name, location, id_skill) VALUES ('Scrum Master Certified (ID: 001574374)', '<a href="https://www.scrumalliance.org/">ScrumAlliance</a>', 4);
   
